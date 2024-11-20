@@ -1,0 +1,220 @@
+
+.header {
+    width: 100%
+}
+
+.hero {
+    background-image: url('../images/hotel.jpg');
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 1em !important;
+    color: #FFFFFF;
+}
+
+.nav-link:hover {
+    color: #1fbfb8;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.description h1 {
+    color: #F5F5DC;
+    font-size: 50px;
+}
+
+.description p {
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #262626;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .footer-logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 6px;
+  }
+
+  .footer-social {
+    margin-top: 20px;
+  }
+  .footer-social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #ff9900;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .footer-social a:hover {
+    background-color: #262626;
+  }
+  
+  .topfun {
+    background-color: rgb(43, 205, 192);
+    color: #ffffff;
+    padding: 6px;
+    width: 34px;
+    margin-top: 24px;
+  }
+
+@media (max-width: 600px) {
+
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: relative;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+
+    .description h1 {
+        font-size: 2em;
+    }
+
+    .description p {
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        left: 0;
+        padding: 0 15px;
+        position: relative;
+        transform: none;
+        text-align: center;
+    }
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+    margin-top: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.row {
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+
+	
+

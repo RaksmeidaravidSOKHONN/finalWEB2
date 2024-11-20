@@ -1,0 +1,176 @@
+.header {
+    width: 100%;
+}
+
+.hero {
+    background-image: url('../images/re.jpg');
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 1em !important;
+    color: #FFFFFF;
+}
+
+.nav-link:hover {
+    color: #1fbfb8;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+    left: 50%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+
+.description h1 {
+    color: #6ab446;
+    font-size: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: #404040;
+    padding: 60px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 70px;
+    width: 60px;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 1.3;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+@media (max-width: 600px) {
+
+    .description {
+        left: 0;
+        padding: 0 15px;
+        position: relative;
+        top: 10%;
+        transform: none;
+        text-align: center;
+    }
+
+    .description h1 {
+        font-size: 2em;
+    }
+
+    .footer {
+        left: 0;
+        padding: 0 15px;
+        position: relative;
+        transform: none;
+        text-align: center;
+    }
+
+}
+
+.container {
+    padding: 64px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+}
+
+.column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+}
+
+.large-font {
+    font-size: 48px;
+}
+
+.xlarge-font {
+    font-size: 64px
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        margin: auto;
+    }
+}
