@@ -218,8 +218,10 @@ textarea {
     resize: none;
 }
 
-span {
-    color: red
+.error-message {
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
 }
 
 .column1 {
