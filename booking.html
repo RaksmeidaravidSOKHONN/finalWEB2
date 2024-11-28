@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<script src="jquery-3.5.1.js"></script>
-<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-
 <header class="header">
 
     <nav class="navbar navbar-expand-md bg-dark">
@@ -49,45 +46,49 @@
 <div class="row">
     <div class="column">
         <div class="card">
-            <img src="images/SRhotel.jpg" alt="Denim Jeans" style="width:100%">
-            <h1>Koulen Central</h1>
+            <img src="images/SRhotel.jpg" alt="Koulen Central" class="hotel-img">
+            <h2 id="toggleContent1">Koulen Central</h2>
             <p class="price">Siem Reap</p>
-            <p>Located in Siem Reap, 800 metres from King's Road Angkor, Koulen Central Hotel provides accommodation with an outdoor swimming pool, free private parking, a garden and a terrace. 6 km from Angkor Wat and 700 metres from Preah Ang Chek Preah Ang Chom, the property offers a restaurant and a bar. The accommodation features a 24-hour front desk, airport transfers, room service and free WiFi throughout the property.</p>
+            <p id="hiddenContent1" style="display: none;">
+                Located in Siem Reap, 800 metres from King's Road Angkor, Koulen Central Hotel provides accommodation with an outdoor swimming pool, free private parking, a garden and a terrace. 6 km from Angkor Wat and 700 metres from Preah Ang Chek Preah Ang Chom, the property offers a restaurant and a bar. The accommodation features a 24-hour front desk, airport transfers, room service and free WiFi throughout the property.
+            </p>
             <p>
-                <a href="https://www.booking.com/hotel/kh/koulen-central.en-gb.html?label=coral-sands-QtC11jzZgc_BqkFXRZzlMQS266364004730%3Apl%3Ata%3Ap1%3Ap21%2C093%2C000%3Aac%3Aap%3Aneg%3Afi%3Atikwd-123405056%3Alp9069789%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YXORK0YJiVoOxcWODxYDaAA&sid=8d609f5826685685e63dca1dbc605503&aid=311984&ucfs=1&arphpl=1&dest_id=-1032755&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=c47b25a03caa02cb&srepoch=1732080077&from_sustainable_property_sr=1&from=searchresults"
-                   target="_blank">
+                <a href="https://www.booking.com/hotel/kh/koulen-central.en-gb.html" target="_blank">
                     <button>Book now</button>
-                </a></p>
+                </a>
+            </p>
         </div>
     </div>
 
     <div class="column">
         <div class="card">
-            <img src="images/BBHotel.jpg" alt="Denim Jeans" style="width:100%">
-            <h1>The Sanctuary Villa</h1>
+            <img src="images/BBHotel.jpg" alt="The Sanctuary Villa" class="hotel-img">
+            <h2 id="toggleContent2">The Sanctuary Villa</h2>
             <p class="price">Battambang</p>
-            <p>Designed to look like a Khmer Buddhist Temple, The Sanctuary Villa Battambang offers an outdoor pool. Fitted with free WiFi, air-conditioned villas present a mix of modern and traditional decor.
-
-                The Sanctuary Villa Battambang offers a complimentary pickup service from Battambang Bus Terminal or train station. Via tuk-tuk, it is a 5-minute ride from the town area and a 15-minute ride from Bamboo Train Station.</p>
+            <p id="hiddenContent2" style="display: none;">
+                Designed to look like a Khmer Buddhist Temple, The Sanctuary Villa Battambang offers an outdoor pool. Fitted with free WiFi, air-conditioned villas present a mix of modern and traditional decor. The Sanctuary Villa Battambang offers a complimentary pickup service from Battambang Bus Terminal or train station. Via tuk-tuk, it is a 5-minute ride from the town area and a 15-minute ride from Bamboo Train Station.
+            </p>
             <p>
-                <a href="https://www.booking.com/hotel/kh/the-sanctuary-villa-battambang.en-gb.html?label=batdambang-NU5zP0PjEl7LH3vZ9LQYKAS382967403263%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-39893431763%3Alp9198350%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YdbYVqXDN8zp7PNDFvT66M8&gclid=Cj0KCQiAi_G5BhDXARIsAN5SX7oxn07FjKMAjtzanY4zbqtVqNQs90iy8A_xq6gnBEp4ggPn2OA5lYoaAlxFEALw_wcB&aid=377400"
-                   target="_blank">
+                <a href="https://www.booking.com/hotel/kh/the-sanctuary-villa-battambang.en-gb.html" target="_blank">
                     <button>Book now</button>
-                </a></p>
+                </a>
+            </p>
         </div>
     </div>
 
     <div class="column">
         <div class="card">
-            <img src="images/Kampot Hotel.jpg" alt="Denim Jeans" style="width:100%">
-            <h1>Montagne Boutique</h1>
-            <p class="price">kampot</p>
-            <p>Located in Kampot and with Kampot Pagoda reachable within 4.7 km, Montagne Boutique provides concierge services, non-smoking rooms, a garden, free WiFi and a restaurant. Each accommodation at the 3-star hotel has city views, and guests can enjoy access to an indoor pool. The accommodation offers a 24-hour front desk, a tour desk and currency exchange for guests.</p>
+            <img src="images/Kampot Hotel.jpg" alt="Montagne Boutique" class="hotel-img">
+            <h2 id="toggleContent3">Montagne Boutique</h2>
+            <p class="price">Kampot</p>
+            <p id="hiddenContent3" style="display: none;">
+                Located in Kampot and with Kampot Pagoda reachable within 4.7 km, Montagne Boutique provides concierge services, non-smoking rooms, a garden, free WiFi and a restaurant. Each accommodation at the 3-star hotel has city views, and guests can enjoy access to an indoor pool. The accommodation offers a 24-hour front desk, a tour desk and currency exchange for guests.
+            </p>
             <p>
-                <a href="https://www.booking.com/hotel/kh/montagne-boutique.en-gb.html?aid=306395&label=kampot-p5trJzUUes4MZF0tQF60YQS528846146390%3Apl%3Ata%3Ap175%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-11539574786%3Alp9198350%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=b75049100fa45d34474d0497336ea236&dest_id=-1023825&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1732080871&srpvid=befc2730d0ea0146&type=total&ucfs=1&"
-                   target="_blank">
+                <a href="https://www.booking.com/hotel/kh/montagne-boutique.en-gb.html" target="_blank">
                     <button>Book now</button>
-                </a></p>
+                </a>
+            </p>
         </div>
     </div>
 </div>
@@ -106,4 +107,7 @@
     </div>
     <p style="margin-top: 24px;">&copy; 2024 Passport to Paradise - Your Ultimate Tourist Companion. All rights reserved.</p>
 </footer>
+<script src="jquery-3.5.1.js"></script>
+<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<script src="js/booking.js"></script>
 </html>
