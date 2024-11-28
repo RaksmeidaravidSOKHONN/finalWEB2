@@ -178,13 +178,13 @@ footer {
 
 }
 
-/* Remove extra left and right margins, due to padding in columns */
+
 .row {
     margin: 0 -5px;
     margin-top: 10px;
 }
 
-/* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
@@ -204,6 +204,82 @@ footer {
 }
 
 
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.card h1 {
+    font-size: 18px;
+    margin: 16px 0 8px;
+    text-align: center;
+}
+
+.card p {
+    text-align: justify;
+    margin: 8px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    flex-grow: 1; 
+}
+
+.card p.price {
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+}
+
+.card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 16px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 16px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    margin: 16px auto;
+}
 
 
 
