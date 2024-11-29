@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const messageField = document.getElementById("message");
     const submitButton = document.getElementById("submit");
 
-    // Function to show error messages
+ 
     function showError(field, errorId, message) {
         const errorElement = document.getElementById(errorId);
         if (message) {
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Validate Name
+ 
     nameField.addEventListener("input", () => {
         const nameValue = nameField.value;
         if (/^[a-zA-Z\s]*$/.test(nameValue)) {
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Validate Email
+
     emailField.addEventListener("blur", () => {
         const emailValue = emailField.value;
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Validate Contact No
+  
     contactField.addEventListener("input", () => {
         const contactValue = contactField.value;
         if (/^\d*$/.test(contactValue)) {
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Validate Message
+
     messageField.addEventListener("input", () => {
         const messageValue = messageField.value;
         if (/^[a-zA-Z\s]*$/.test(nameValue)) {
@@ -60,11 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Handle Form Submission
+
     submitButton.addEventListener("click", () => {
         let isValid = true;
 
-        // Check all fields
         if (!nameField.value.trim()) {
             showError(nameField, "name-error", "Name is required.");
             isValid = false;
@@ -89,3 +88,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", 
+    });
+  }
+  
